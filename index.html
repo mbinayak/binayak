@@ -1,1 +1,276 @@
-Hello World
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Binayak Mishra</title>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:100,200,300,400,500" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+        <style>
+            * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Encode Sans Condensed', sans-serif;
+            }
+
+            .thump {
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            overflow: hidden;
+            }
+            .thump .dv001 {
+            width: 50%;
+            min-height: 100%;
+            item: 1;
+            }
+
+            .left-rodent {
+            background: white;
+            overflow-y: hidden;
+            overflow-x: hidden;
+            }
+
+            .right-rodent {
+            width: 100% !important;
+            background: #f6eb15;
+            }
+
+            .logo {
+            text-transform: uppercase;
+            font-weight: 900;
+            font-size: 25px;
+            text-decoration: underline;
+            padding: 0 10px;
+            color: black;
+            font-family: 'Monoton', cursive;
+            }
+
+            .face-img {
+            background: url("http://res.cloudinary.com/dgxuwpisw/image/upload/v1502830484/edit1-transparent-bg_c0mnbn.png") top 77% right 10% no-repeat black;
+            position: absolute;
+            z-index: 1;
+            width: 50%;
+            height: calc(100% - 20px);
+            top: 40px;
+            }
+
+            .inner-text {
+            font-size: 35px;
+            text-transform: uppercase;
+            font-weight: 500;
+            letter-spacing: -2px;
+            font-family: 'Monoton', cursive;
+            }
+
+            .inner-text-2 {
+            font-size: 50px;
+            text-transform: uppercase;
+            font-weight: 500;
+            margin: -15px 0 10px 0;
+            font-family: 'Monoton', cursive;
+            }
+
+            .intro-text-box {
+            position: absolute;
+            right: 0;
+            top: 45%;
+            z-index: 3;
+            width: 45%;
+            font-size: 17px;
+            padding-right: 20px;
+            }
+            .intro-text-box:before {
+            content: "";
+            position: absolute;
+            height: 10px;
+            }
+            .intro-text-box:after {
+            content: "";
+            position: absolute;
+            height: 10px;
+            }
+
+            .bottom-pin-line {
+            position: absolute;
+            width: 50%;
+            height: 2px;
+            bottom: 5%;
+            right: 25%;
+            z-index: 20;
+            background: white;
+            }
+            .bottom-pin-line:before {
+            content: "";
+            position: absolute;
+            background: white;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            right: 0;
+            bottom: -4px;
+            }
+
+            .nav-side {
+            position: absolute;
+            top: 40px;
+            right: 30px;
+            text-align: right;
+            font-size: 14px;
+            border-right: 2px solid rgba(0, 0, 0, 0.25);
+            transition: border 0.7s;
+            }
+            .nav-side:hover {
+            color: #353535;
+            border-right: 5px solid #353535;
+            }
+            .nav-side .midd {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            }
+            .nav-side .midd a {
+            color: inherit;
+            text-decoration: none;
+            }
+            .nav-side div {
+            color: rgba(0, 0, 0, 0.25);
+            margin: 0 10px 0 0;
+            transition: color 0.7s, text-decoration 0.7s;
+            cursor: pointer;
+            }
+            .nav-side div:hover {
+            color: #353535;
+            text-decoration: underline;
+            }
+            .nav-side .social-links {
+            font-size: 18px;
+            }
+            .nav-side .social-links a, .nav-side .social-links a:active, .nav-side .social-links a:visited {
+            color: rgba(0, 0, 0, 0.25);
+            }
+            .nav-side .social-links a:hover {
+            color: #353535;
+            }
+            .nav-side .social-links:hover {
+            color: rgba(0, 0, 0, 0.25);
+            text-decoration: none;
+            }
+            .nav-side .social-links:hover span {
+            margin: 0 5px;
+            }
+            .nav-side .social-links span {
+            display: inline-block;
+            padding: 2px;
+            margin: 0 4px;
+            transition: margin 0.7s;
+            }
+            .nav-side .social-links span:hover {
+            color: #353535;
+            }
+
+            @media screen and (max-width: 600px) {
+            .right-rodent {
+                position: absolute;
+            }
+
+            .face-img {
+                width: 100%;
+                height: 100%;
+                background-position-y: 25%;
+                top: 25px;
+                z-index: 4;
+                width: 30px;
+                height: 22%;
+                left: 30px;
+            }
+
+            .intro-text-box {
+                position: absolute;
+                width: 100%;
+                font-size: 15px;
+                padding: 45% 30px 0;
+                background: #f6eb15;
+                height: 97%;
+                top: 5%;
+            }
+
+            .inner-text {
+                font-size: 28px;
+            }
+
+            .inner-text-2 {
+                font-size: 40px;
+                margin-bottom: 5px;
+            }
+
+            .nav-side {
+                z-index: 4;
+            }
+
+            .logo {
+                position: absolute;
+                top: 0;
+                z-index: 5;
+                left: 30px;
+                font-size: 17px;
+                padding: 0;
+            }
+
+            .bottom-pin-line {
+                width: 80%;
+                left: 10%;
+            }
+            }
+        </style>
+    </head>
+    <body>
+        <secion class="thump">
+            <div class="dv001 left-rodent">
+                <div class="logo" >BM</div>
+            </div>
+            <div class="dv001 right-rodent">
+                <div class="nav-side">
+                <div>Blog</div>
+                <div class="midd">
+                    <a href="https://registry.jsonresume.org/mbinayak" target="_blank">
+                    Resume
+                    </a>
+                </div>
+                <div class="midd">Contact</div>
+                <div class="social-links">
+                    <span>
+                    <a href="https://www.facebook.com/mbinayak" target="_blank" alt="my facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                    </span>
+                    <span>
+                    <a href="https://www.linkedin.com/in/binayak-mishra/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    </span><span>
+                    <a href="https://github.com/mbinayak" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                    </span>
+                    <span>
+                    <a href="https://www.instagram.com/binayak_x/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>    
+                    </span>
+                </div>
+                </div>
+            </div>
+            <div class="face-img"></div>
+            <div class="side-container">
+                <div class="upper-bar"></div>
+                <div class="lower-box"></div>
+            </div>
+            <div class="intro-text-box">
+                <p>Hey, I'm</p>
+                <div class="inner-text">
+                Binayak</div>
+                <div class="inner-text-2">
+                Mishra</div>
+                <p>Programmer</p>
+                <p>Technology Enthusiast</p>
+                <p>Love music and movies</p>
+                <br/>
+                <p>I think about communication, learning and conciousness
+              </div>
+            <div class="bottom-pin-line"></div>
+        </section>
+    </body>
+</html>
