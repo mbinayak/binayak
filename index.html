@@ -11,227 +11,226 @@
         <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
         <style>
             * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Encode Sans Condensed', sans-serif;
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: 'Encode Sans Condensed', sans-serif;
             }
 
             .thump {
-            height: 100vh;
-            display: flex;
-            flex-direction: row;
-            position: relative;
-            overflow: hidden;
+                height: 100vh;
+                display: flex;
+                flex-direction: row;
+                position: relative;
+                overflow: hidden;
             }
             .thump .dv001 {
-            width: 50%;
-            min-height: 100%;
-            item: 1;
+                width: 50%;
+                min-height: 100%;
             }
 
             .left-rodent {
-            background: white;
-            overflow-y: hidden;
-            overflow-x: hidden;
+                background: white;
+                overflow-y: hidden;
+                overflow-x: hidden;
             }
 
             .right-rodent {
-            width: 100% !important;
-            background: #f6eb15;
+                width: 100% !important;
+                background: #f6eb15;
             }
 
             .logo {
-            text-transform: uppercase;
-            font-weight: 900;
-            font-size: 25px;
-            text-decoration: underline;
-            padding: 0 10px;
-            color: black;
-            font-family: 'Monoton', cursive;
+                text-transform: uppercase;
+                font-weight: 900;
+                font-size: 25px;
+                text-decoration: underline;
+                padding: 0 10px;
+                color: black;
+                font-family: 'Monoton', cursive;
             }
 
             .face-img {
-            background: url("http://res.cloudinary.com/dgxuwpisw/image/upload/v1502830484/edit1-transparent-bg_c0mnbn.png") top 77% right 10% no-repeat black;
-            position: absolute;
-            z-index: 1;
-            width: 50%;
-            height: calc(100% - 20px);
-            top: 40px;
+                background: url("http://res.cloudinary.com/dgxuwpisw/image/upload/v1502830484/edit1-transparent-bg_c0mnbn.png") top 77% right 10% no-repeat black;
+                position: absolute;
+                z-index: 1;
+                width: 50%;
+                height: calc(100% - 20px);
+                top: 40px;
             }
 
             .inner-text {
-            font-size: 35px;
-            text-transform: uppercase;
-            font-weight: 500;
-            letter-spacing: -2px;
-            font-family: 'Monoton', cursive;
+                font-size: 35px;
+                text-transform: uppercase;
+                font-weight: 500;
+                letter-spacing: -2px;
+                font-family: 'Monoton', cursive;
             }
 
             .inner-text-2 {
-            font-size: 50px;
-            text-transform: uppercase;
-            font-weight: 500;
-            margin: -15px 0 10px 0;
-            font-family: 'Monoton', cursive;
+                font-size: 50px;
+                text-transform: uppercase;
+                font-weight: 500;
+                margin: -15px 0 10px 0;
+                font-family: 'Monoton', cursive;
             }
 
             .intro-text-box {
-            position: absolute;
-            right: 0;
-            top: 45%;
-            z-index: 3;
-            width: 45%;
-            font-size: 17px;
-            padding-right: 20px;
+                position: absolute;
+                right: 0;
+                top: 45%;
+                z-index: 3;
+                width: 45%;
+                font-size: 17px;
+                padding-right: 20px;
             }
             .intro-text-box:before {
-            content: "";
-            position: absolute;
-            height: 10px;
+                content: "";
+                position: absolute;
+                height: 10px;
             }
             .intro-text-box:after {
-            content: "";
-            position: absolute;
-            height: 10px;
+                content: "";
+                position: absolute;
+                height: 10px;
             }
 
             .bottom-pin-line {
-            position: absolute;
-            width: 50%;
-            height: 2px;
-            bottom: 5%;
-            right: 25%;
-            z-index: 20;
-            background: white;
+                position: absolute;
+                width: 50%;
+                height: 2px;
+                bottom: 5%;
+                right: 25%;
+                z-index: 20;
+                background: white;
             }
             .bottom-pin-line:before {
-            content: "";
-            position: absolute;
-            background: white;
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            right: 0;
-            bottom: -4px;
+                content: "";
+                position: absolute;
+                background: white;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                right: 0;
+                bottom: -4px;
             }
 
             .nav-side {
-            position: absolute;
-            top: 40px;
-            right: 30px;
-            text-align: right;
-            font-size: 14px;
-            border-right: 2px solid rgba(0, 0, 0, 0.25);
-            transition: border 0.7s;
+                position: absolute;
+                top: 40px;
+                right: 30px;
+                text-align: right;
+                font-size: 14px;
+                border-right: 2px solid rgba(0, 0, 0, 0.25);
+                transition: border 0.7s;
             }
             .nav-side:hover {
-            color: #353535;
-            border-right: 5px solid #353535;
+                color: #353535;
+                border-right: 5px solid #353535;
             }
             .nav-side .midd {
-            margin-top: 10px;
-            margin-bottom: 10px;
+                margin-top: 10px;
+                margin-bottom: 10px;
             }
             .nav-side .midd a {
-            color: inherit;
-            text-decoration: none;
+                color: inherit;
+                text-decoration: none;
             }
             .nav-side div {
-            color: rgba(0, 0, 0, 0.25);
-            margin: 0 10px 0 0;
-            transition: color 0.7s, text-decoration 0.7s;
-            cursor: pointer;
+                color: rgba(0, 0, 0, 0.25);
+                margin: 0 10px 0 0;
+                transition: color 0.7s, text-decoration 0.7s;
+                cursor: pointer;
             }
             .nav-side div:hover {
-            color: #353535;
-            text-decoration: underline;
+                color: #353535;
+                text-decoration: underline;
             }
             .nav-side .social-links {
-            font-size: 18px;
+                font-size: 18px;
             }
             .nav-side .social-links a, .nav-side .social-links a:active, .nav-side .social-links a:visited {
-            color: rgba(0, 0, 0, 0.25);
+                color: rgba(0, 0, 0, 0.25);
             }
             .nav-side .social-links a:hover {
-            color: #353535;
+                color: #353535;
             }
             .nav-side .social-links:hover {
-            color: rgba(0, 0, 0, 0.25);
-            text-decoration: none;
+                color: rgba(0, 0, 0, 0.25);
+                text-decoration: none;
             }
             .nav-side .social-links:hover span {
-            margin: 0 5px;
+                margin: 0 5px;
             }
             .nav-side .social-links span {
-            display: inline-block;
-            padding: 2px;
-            margin: 0 4px;
-            transition: margin 0.7s;
+                display: inline-block;
+                padding: 2px;
+                margin: 0 4px;
+                transition: margin 0.7s;
             }
             .nav-side .social-links span:hover {
-            color: #353535;
+                color: #353535;
             }
 
             @media screen and (max-width: 600px) {
-            .right-rodent {
-                position: absolute;
-            }
+                .right-rodent {
+                    position: absolute;
+                }
 
-            .face-img {
-                width: 100%;
-                height: 100%;
-                background-position-y: 25%;
-                top: 25px;
-                z-index: 4;
-                width: 30px;
-                height: 22%;
-                left: 30px;
-            }
+                .face-img {
+                    width: 100%;
+                    height: 100%;
+                    background-position-y: 25%;
+                    top: 25px;
+                    z-index: 4;
+                    width: 30px;
+                    height: 22%;
+                    left: 30px;
+                }
 
-            .intro-text-box {
-                position: absolute;
-                width: 100%;
-                font-size: 15px;
-                padding: 45% 30px 0;
-                background: #f6eb15;
-                height: 97%;
-                top: 5%;
-            }
+                .intro-text-box {
+                    position: absolute;
+                    width: 100%;
+                    font-size: 15px;
+                    padding: 45% 30px 0;
+                    background: #f6eb15;
+                    height: 97%;
+                    top: 5%;
+                }
 
-            .inner-text {
-                font-size: 28px;
-            }
+                .inner-text {
+                    font-size: 28px;
+                }
 
-            .inner-text-2 {
-                font-size: 40px;
-                margin-bottom: 5px;
-            }
+                .inner-text-2 {
+                    font-size: 40px;
+                    margin-bottom: 5px;
+                }
 
-            .nav-side {
-                z-index: 4;
-            }
+                .nav-side {
+                    z-index: 4;
+                }
 
-            .logo {
-                position: absolute;
-                top: 0;
-                z-index: 5;
-                left: 30px;
-                font-size: 17px;
-                padding: 0;
-            }
+                .logo {
+                    position: absolute;
+                    top: 0;
+                    z-index: 5;
+                    left: 30px;
+                    font-size: 17px;
+                    padding: 0;
+                }
 
-            .bottom-pin-line {
-                width: 80%;
-                left: 10%;
-            }
+                .bottom-pin-line {
+                    width: 80%;
+                    left: 10%;
+                }
             }
         </style>
     </head>
     <body>
         <secion class="thump">
             <div class="dv001 left-rodent">
-                <div class="logo" >BM</div>
+                <div class="logo">BM</div>
             </div>
             <div class="dv001 right-rodent">
                 <div class="nav-side">
@@ -239,17 +238,15 @@
                     <a href="https://mbinayak.gitbook.io/blog/">Blog</a>
                 </div>
                 <div class="midd">
-                    <a href="https://registry.jsonresume.org/mbinayak" target="_blank">
-                    Resume
-                    </a>
+                    <a href="https://registry.jsonresume.org/mbinayak" target="_blank">Resume</a>
                 </div>
                 <div class="midd">
                     <a href="mailto:mbinayak@ymail.com?Subject=Hello Binayak" target="_top">Say Hi!</a>
                 </div>
                 <div class="social-links">
                     <span>
-                        <a href="https://codepen.io/binayak/" target="_blank" alt="my fa-codepen">
-                            <i class="fab fa-codepen"></i>
+                        <a href="https://codepen.io/binayak/" target="_blank" alt="my codepen">
+                            <i class="fa fa-codepen" aria-hidden="true"></i>
                         </a>
                     </span>
                     <span>
@@ -282,16 +279,16 @@
             </div>
             <div class="intro-text-box">
                 <p>Hey, I'm</p>
-                <div class="inner-text">
-                Binayak</div>
-                <div class="inner-text-2">
-                Mishra</div>
+                <div class="inner-text">Binayak</div>
+                <div class="inner-text-2">Mishra</div>
                 <p>Programmer</p>
                 <p>Technology Enthusiast</p>
                 <p>Eclectic</p>
                 <p>Movie fanatic</p>
                 <br/>
-                <p>I think about <a href="https://mbinayak.gitbook.io/blog/">communication, learning and conciousness</a>
+                <p>
+                    I think about <a href="https://mbinayak.gitbook.io/blog/">communication, learning and conciousness</a>
+                </p>
               </div>
             <div class="bottom-pin-line"></div>
         </section>
